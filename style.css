@@ -1,0 +1,173 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-color: #0d1117;
+}
+.btc_title {
+  height: 5rem;
+  color: #ffd700;
+  font-size: 2rem;
+  text-shadow: 0 0 10px gold;
+  box-shadow: 0 0 15px #30363d;
+  padding: 1.8rem 0 0 4rem;
+  background-color: #0d1117;
+  border-bottom: 1px solid grey;
+  border-bottom-right-radius: 0.4rem;
+  border-bottom-left-radius: 0.4rem;
+}
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5rem;
+}
+.rightbox-sec {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+.card-1 {
+  margin: 3rem 0 0 3rem;
+  display: flex;
+  padding: 1rem 0 0 1rem;
+  font-size: 1.5rem;
+  gap: 1.5rem;
+  background-color: white;
+  min-height: 15.5rem;
+  border-radius: 1rem;
+  box-shadow: -5px 5px 1.8rem gold;
+  width: 90%;
+  max-width: 32rem;
+}
+#btc_link {
+  color: black;
+  text-decoration: none;
+}
+.btc_img_box {
+  position: relative;
+  right: 1rem;
+  height: 13.5rem;
+  display: flex;
+  align-items: center;
+}
+.btc_img {
+  box-shadow: -4px 5px 0.5rem black;
+  border-radius: 54rem;
+  width: 10rem;
+}
+.btc_txt {
+  color: #ffd700;
+}
+#cmp {
+  margin: 3.5rem 0 0.1rem 0;
+  font-size: 2.5rem;
+}
+
+.currency {
+  font-size: 1.5rem;
+}
+#cmpchange {
+  margin: 0 0 1.5rem 0;
+  font-size: 1.3rem;
+}
+
+.card-2 {
+  color: #0d1117;
+  margin: 0 0 0 3rem;
+  background-color: white;
+  height: 15.5rem;
+  width: 32rem;
+  border-radius: 1rem;
+  box-shadow: -5px 5px 1.8rem gold;
+}
+.news-box {
+  margin: 0.5rem 1rem 1rem 1rem;
+}
+.btc_txt_news {
+  color: gold;
+}
+.news-title {
+  padding-left: 0.5rem;
+  margin: 1rem 0 0 0;
+  font-weight: 700;
+  max-width: 30rem;
+  list-style: none;
+  background-color: gold;
+  border-radius: 0.8rem;
+  box-shadow: -4px 5px 0.5rem black;
+}
+.news-link {
+  color: black;
+  text-decoration-line: none;
+}
+
+.ma-chart {
+  margin: 3rem 0 0 3rem;
+  background-color: black;
+  height: 32rem;
+  width: 38rem;
+  border: 1px solid;
+  border-radius: 1rem;
+  box-shadow: -7px 9px 1.8rem gold;
+  padding: 1rem;
+}
+
+@media (max-width: 576px) {
+  .btc_title {
+    height: 6rem;
+    min-width: 6rem;
+    padding: 2.2rem 0 0 2.5rem;
+    font-size: 1.5rem;
+  }
+
+  .box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-1 {
+    height: 90%;
+    max-height: 25rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    width: 90%;
+    margin: 1rem;
+  }
+
+  .card-2 {
+    height: 90%;
+    margin: 0.5rem 1rem 1rem 1rem;
+    width: 90%;
+    margin: 0.5rem 1rem 0rem 1rem;
+  }
+  .ma-chart {
+    width: 90%;
+    min-width: auto;
+    height: 25rem;
+    margin: -1.5rem 1rem 2rem 1rem;
+  }
+  .btc_tittle {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  #cmp {
+    margin: 2rem 0 0.1rem 0;
+    font-size: 2.5rem;
+  }
+  .btc_img_box {
+    position: relative;
+    left: 0.1rem;
+    height: 13.5rem;
+    display: flex;
+    align-items: center;
+  }
+}

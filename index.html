@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="google-site-verification"
+      content="YOUR_RANDOM_GOOGLE_CODE_HERE"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bitcoin indicator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <h1 class="btc_title">BITCOIN 1HOUR INDICATOR</h1>
+    <div class="box">
+      <section class="rightbox-sec">
+        <div class="card-1">
+          <div>
+            <a
+              id="btc_link"
+              target="chart_page"
+              href="https://www.tradingview.com/chart/VPXXxhXL/?symbol=BINANCE%3ABNBBTC"
+            >
+              <p>
+                Market Summary > <span class="btc_txt"><b>Bitcoin</b></span>
+              </p>
+              <p id="cmp">Current Price</p></a
+            >
+            <p id="cmpchange"><b>change</b></p>
+            <p class="time"><b>Time</b></p>
+          </div>
+          <div class="btc_img_box">
+            <a
+              id="btc_link"
+              target="chart_page"
+              href="https://www.tradingview.com/chart/VPXXxhXL/?symbol=BINANCE%3ABNBBTC"
+              ><img class="btc_img" src="1.png" alt="bitcoin-img" />
+            </a>
+          </div>
+        </div>
+        <div class="card-2">
+          <div class="news-box">
+            <h1><b class="btc_txt_news">Bitcoin</b> News:-</h1>
+            <p class="headlines"></p>
+          </div>
+        </div>
+      </section>
+
+      <div class="ma-chart">
+        <canvas id="btcChart"></canvas>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
