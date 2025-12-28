@@ -4,6 +4,13 @@ A professional, real-time Bitcoin dashboard that displays live prices, technical
 
 ![Bitcoin Dashboard Preview](https://img.shields.io/badge/Bitcoin-Dashboard-gold?style=for-the-badge&logo=bitcoin)
 
+## 🔗 Links
+
+- **Live Demo**: [Bitcoin Dashboard](https://jimittpopat-bit.github.io/Bitcoin-Dashboard/)
+- **Repository**: [GitHub](https://github.com/jimittpopat-bit/Bitcoin-Dashboard)
+- **TradingView**: [Professional Charts](https://www.tradingview.com/chart/VPXXxhXL/?symbol=BINANCE%3ABTCUSDT)
+
+
 ## ✨ Features
 
 ### 📊 **Real-Time Data**
@@ -165,12 +172,6 @@ Contributions are welcome! Feel free to:
 ## 📄 License
 
 This project is open source and available under the MIT License.
-
-## 🔗 Links
-
-- **Live Demo**: [Bitcoin Dashboard](https://jimittpopat-bit.github.io/Bitcoin-Dashboard/)
-- **Repository**: [GitHub](https://github.com/jimittpopat-bit/Bitcoin-Dashboard)
-- **TradingView**: [Professional Charts](https://www.tradingview.com/chart/VPXXxhXL/?symbol=BINANCE%3ABTCUSDT)
 
 ## 💡 Acknowledgments
 
