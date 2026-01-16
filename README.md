@@ -6,7 +6,7 @@ A professional, real-time Bitcoin dashboard that displays live prices, technical
 
 ## 🔗 Links
 
-- **Live Demo**: [Bitcoin Dashboard](https://jimittpopat-bit.github.io/Bitcoin-Dashboard/)
+- **Live Demo**: [Bitcoin Dashboard](https://bitcoin-dashboard-gamma.vercel.app/)
 - **Repository**: [GitHub](https://github.com/jimittpopat-bit/Bitcoin-Dashboard)
 - **TradingView**: [Professional Charts](https://www.tradingview.com/chart/VPXXxhXL/?symbol=BINANCE%3ABTCUSDT)
 
