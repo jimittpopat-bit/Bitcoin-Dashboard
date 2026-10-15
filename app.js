@@ -4,7 +4,7 @@ const URL =
   "https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1h&limit=24";
 
 const NEWS_URL =
-  "https://api.rss2json.com/v1/api.json?rss_url=https://cointelegraph.com/rss/tag/bitcoin";
+  "https://hn.algolia.com/api/v1/search_by_date?query=bitcoin&tags=story&restrictSearchableAttributes=title&hitsPerPage=4";
 
 let cmp = document.querySelector("#cmp");
 let oneHour = document.querySelector("#oneHour");
@@ -29,6 +29,10 @@ const getData = async () => {
         throw new Error("News request failed");
       }
       let newsData = await response1.json();
+      newsData.items = newsData.hits.map((h) => ({
+        title: h.title,
+        link: h.url || "https://news.ycombinator.com/item?id=" + h.objectID,
+      }));
 
       headHines.innerHTML = `<p>
 <ul>
