@@ -16,21 +16,31 @@ const getData = async () => {
   try {
     console.log("getting data...");
     let response = await fetch(URL);
-    let response1 = await fetch(NEWS_URL);
-    if ((!response.ok, !response1.ok)) {
+    if (!response.ok) {
       throw new Error("API request failed");
     }
     let data = await response.json();
-    let newsData = await response1.json();
 
-    headHines.innerHTML = `<p>
+    // FIX: news is fetched in its own try/catch so a news failure
+    // no longer stops the price and chart from loading
+    try {
+      let response1 = await fetch(NEWS_URL);
+      if (!response1.ok) {
+        throw new Error("News request failed");
+      }
+      let newsData = await response1.json();
+
+      headHines.innerHTML = `<p>
 <ul>
-<li class="news-title"><a class="news-link target="news-page" href="${newsData.items[0].link}">${newsData.items[0].title}</a></li>
-<li class="news-title"><a class="news-link target="news-page" href="${newsData.items[1].link}">${newsData.items[1].title}</a></li>
-<li class="news-title"><a class="news-link target="news-page" href="${newsData.items[2].link}">${newsData.items[2].title}</a></li>
-<li class="news-title"><a class="news-link target="news-page" href="${newsData.items[3].link}">${newsData.items[3].title}</a></li>
+<li class="news-title"><a class="news-link" target="news-page" href="${newsData.items[0].link}">${newsData.items[0].title}</a></li>
+<li class="news-title"><a class="news-link" target="news-page" href="${newsData.items[1].link}">${newsData.items[1].title}</a></li>
+<li class="news-title"><a class="news-link" target="news-page" href="${newsData.items[2].link}">${newsData.items[2].title}</a></li>
+<li class="news-title"><a class="news-link" target="news-page" href="${newsData.items[3].link}">${newsData.items[3].title}</a></li>
 </ul>
 </p>`;
+    } catch (newsErr) {
+      console.error("Error fetching news:", newsErr);
+    }
 
     // Extracts data for chart
     let priceData = [];
